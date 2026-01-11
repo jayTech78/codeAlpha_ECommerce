@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bgnav">
+     <div class="nav">
+  <div>
+    <a class="navHome" href="/frontend/index.html">AIMS</a>
+  </div>
+
+  <div>
+    <input placeholder="Search for Product" />
+  </div>
+
+  <ul class="menu">
+    <li><a href="/frontend/cart.html">Cart</a></li>
+    <li><a href="/frontend/login.html">Login</a></li>
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="loginBody">
+      <div class="">
+        <h1 class="loginh1">Register</h1>
+        <div class="login">
+          <label for="fullname">Full Name</label>
+          <br />
+          <input id="regName" type="text" placeholder="Input Full Name" />
+        </div>
+        <div class="login">
+          <label for="email">Email</label>
+          <br />
+          <input id="regEmail" type="text" placeholder="Input Email" />
+        </div>
+        <div class="login">
+          <label for="password" id="password">Password</label>
+          <br />
+          <input type="text" id="regPassword" name="password" placeholder="Input password" />
+        </div>
+
+        <div class="login">
+          <button onclick="register()">Register</button>
+        </div>
+        <div class="login">
+          <small
+            >if you don't have an account
+            <span><a href="/frontend/login.html">Login</a></span></small
+          >
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

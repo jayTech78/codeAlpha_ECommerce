@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bgnav">
+      <div class="nav">
+        <div>
+          <a class="navHome" href="/frontend/index.html">AIMS</a>
+        </div>
+
+        <div>
+          <input placeholder="Search for Product" />
+        </div>
+
+        <ul class="menu">
+          <li><a href="/frontend/cart.html">Cart</a></li>
+          <li><a href="/frontend/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="loginBody">
+      <div class="">
+        <h1 class="loginh1">Add Product</h1>
+        <div class="login">
+          <label for="prodName">Product Name</label>
+          <br />
+          <input id="prodName" type="text" placeholder="Input Product Name" />
+        </div>
+        <div class="login">
+          <label for="prodPrice">Price</label>
+          <br />
+          <input
+            id="prodPrice"
+            type="text"
+            placeholder="Input Product Price"
+          />
+        </div>
+        <div class="login">
+          <label for="prodQuantity">Quantity In Stock</label>
+          <br />
+          <input
+            id="prodQuantity"
+            type="number"
+            placeholder="Input Product Quantity In Stock"
+          />
+        </div>
+        <div class="login">
+          <label for="prodDescription">Description</label>
+          <br />
+          <textarea
+            placeholder="Input Product Description"
+            cols="55"
+            rows="10"
+            id="prodDescription"
+          >
+          </textarea>
+        </div>
+        <div class="login">
+          <label for="prodImage">Product Image</label>
+          <br />
+          <input type="file" id="prodImage" name="password" />
+        </div>
+
+        <div class="login">
+          <button onclick="addProduct()">Add Product</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

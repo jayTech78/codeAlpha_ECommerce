@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="bgnav">
+      <div class="nav">
+        <a class="navHome" href="/frontend/index.html">AIMS</a>
+        <input placeholder="Search for Product" />
+        <ul class="menu">
+          <li><a href="/frontend/product.html">Product</a></li>
+          <li><a href="/frontend/cart.html">Cart</a></li>
+          <li><a href="/frontend/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="productHeading">
+      <h1 class="productTitle">Our Product</h1>
+      <a class="addProductButton" onclick="goToAddProduct()">+ Add Product</a>
+    </div>
+
+    <div class="productdisplay">
+      <div class="subproductdisplay" id="productBody"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", getProducts);
+    </script>
+  </body>
+</html>

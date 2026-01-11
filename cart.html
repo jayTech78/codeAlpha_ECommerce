@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navs -->
+    <div class="bgnav">
+      <div class="nav">
+        <div>
+          <a class="navHome" href="/frontend/index.html">AIMS</a>
+        </div>
+        <div><input placeholder="Searcch for Product" /></div>
+        <ul class="menu">
+          <li><a href="/frontend/product.html">Product</a></li>
+          <li><a href="/frontend/cart.html">Cart</a></li>
+          <li><a href="/frontend/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cart View -->
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Image</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="cartTableBody">
+         
+        </tbody>
+      </table>
+
+      <div class="Total">
+        <div><h4>Total: <span id="totalPrice"></span></h4></div>
+        <div><button onclick="addOrder()">Place Order</button></div>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", getCart);</script>
+  </body>
+</html>
